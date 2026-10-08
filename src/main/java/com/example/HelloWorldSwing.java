@@ -9,6 +9,7 @@ public class HelloWorldSwing {
      * event-dispatching thread.
      */
     private static void createAndShowGUI() {
+        JButton button = new JButton("press me"); 
         //Create and set up the window.
         JFrame frame = new JFrame("HelloWorldSwing");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -20,6 +21,7 @@ public class HelloWorldSwing {
         //Display the window.
         frame.pack();
         frame.setVisible(true);
+        frame.add(button);
     }
 
     public static void main(String[] args) {
